@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Management System</title>
+    <style>
+    table {
+        border-collapse: collapse;
+        width: 70%;
+        margin-top: 20px;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 12px;
+        text-align: left;
+    }
+
+    th {
+        background-color: lightgray;
+    }
+</style>
+</head>
+<body>
+
+    <h1>Employee Management System</h1>
+<h2>Active Employees</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+
+    <tbody id="employeeResult"></tbody>
+</table>
+<h2>Find Employee by ID</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Employee Detail</th>
+            <th>Information</th>
+        </tr>
+    </thead>
+    <tbody id="employeeDetails"></tbody>
+
+</table>
+<h2>Total Salary</h2>
+<p id="totalSalary"></p>
+<h2>Filter by Department</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody id="departmentResult"></tbody>
+</table>
+<h2>Updated Employee Salaries (10% Increment)</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Original Salary</th>
+            <th>Updated Salary</th>
+        </tr>
+    </thead>
+    <tbody id="updatedSalaryResult"></tbody>
+</table>
+<h2>Department Statistics</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Department</th>
+            <th>Total Employees</th>
+        </tr>
+    </thead>
+    <tbody id="departmentStatsResult"></tbody>
+</table>
+<h2>Highest-Paid Employee</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody id="highestPaidResult"></tbody>
+</table>
+<h2>Employees Sorted by Salary</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody id="sortedEmployeesResult"></tbody>
+</table>
+<h2>Average Salary</h2>
+<p id="averageSalaryResult"></p>
+<h2>Inactive Employees</h2>
+
+<ul id="inactiveEmployeesResult"></ul>
+<h2>New Employee Added</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody id="newEmployeeResult"></tbody>
+</table>
+<h2>Employees After Removal</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody id="remainingEmployeesResult"></tbody>
+</table>
+<h2>Employee Status Summary</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Status</th>
+            <th>Total Employees</th>
+        </tr>
+    </thead>
+    <tbody id="employeeStatusResult"></tbody>
+</table>
+<h2>Search Employee by Name</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody id="searchedEmployeeResult"></tbody>
+</table>
+<h2>Total Active Employees Salary</h2>
+<p id="activeSalaryResult"></p>
+<h2>Lowest-Paid Employee</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody id="lowestPaidResult"></tbody>
+</table>
+<h2>Department-wise Total Salary</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Department</th>
+            <th>Total Salary</th>
+        </tr>
+    </thead>
+    <tbody id="departmentSalaryResult"></tbody>
+</table>
+<h2>Department Employee Count</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Department</th>
+            <th>Total Employees</th>
+        </tr>
+    </thead>
+    <tbody id="departmentEmployeeCountResult"></tbody>
+</table>
+<h2>Employees with Salary Greater Than 50,000</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody id="highSalaryEmployeesResult"></tbody>
+</table>
+<h2>Active Status Employees</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody id="activeStatusEmployeesResult"></tbody>
+</table>
+<h2>Total Inactive Employees Salary</h2>
+<p id="inactiveSalaryResult"></p><h2>All Employee Names</h2>
+
+<ul id="employeeNamesResult"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>
