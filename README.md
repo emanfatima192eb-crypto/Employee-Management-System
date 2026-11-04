@@ -18,7 +18,6 @@ A simple Employee Management System built using HTML, CSS, and JavaScript.
 ## Technologies Used
 
 - HTML
-- CSS
 - JavaScript
 
 ## JavaScript Concepts
